@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import {Grunt} from "../../common/character/grunt";
 import {Specialist} from "../../common/character/specialist";
+import {Commander} from "../../common/character/commander";
 
-type FighterType = 'grunt' | 'specialist' | 'commander';
+export type FighterType = 'grunt' | 'specialist' | 'commander';
 
 @Injectable({
   providedIn: 'root'
@@ -11,42 +12,31 @@ export class RecruitmentService {
 
   constructor() { }
 
-  private static recruitNewFighter(type: FighterType) {
+  public recruitNewFighter(type: FighterType) {
     switch(type) {
       case 'grunt':
-        RecruitmentService.recruitGrunt();
-        break;
+        return RecruitmentService.recruitGrunt();
 
       case 'specialist':
-        RecruitmentService.recruitSpecialist();
-        break;
+        return RecruitmentService.recruitSpecialist();
 
       case 'commander':
-        RecruitmentService.recruitCommander();
-        break;
+        return RecruitmentService.recruitCommander();
 
       default:
         throw new Error('There was an error recruiting a new fighter')
     }
   }
 
-  private static recruitGrunt(): void {
-    const newRecruit = new Grunt();
-
-    console.log(newRecruit);
+  private static recruitGrunt(): Grunt {
+    return new Grunt();
   }
 
-  private static recruitSpecialist(): void {
-    const newRecruit = new Specialist();
-
-    console.log(newRecruit);
+  private static recruitSpecialist(): Specialist {
+    return new Specialist();
   }
 
-  private static recruitCommander(): void {
-    const newRecruit = new Specialist();
-
-    console.log(newRecruit)
+  private static recruitCommander(): Commander {
+    return new Commander();
   }
-
-
 }

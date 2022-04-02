@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FighterType, RecruitmentService} from "./recruitment.service";
 
 @Component({
   selector: 'app-recruitment',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecruitmentComponent implements OnInit {
 
-  constructor() { }
+  newRecruit?: any;
+
+  constructor(
+    private recruitmentService: RecruitmentService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  recruit(type: FighterType) {
+    this.newRecruit = this.recruitmentService.recruitNewFighter(type);
   }
 
 }

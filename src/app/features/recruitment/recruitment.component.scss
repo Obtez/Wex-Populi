@@ -1,0 +1,26 @@
+.button-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+button {
+  display: block;
+  width: 250px;
+  padding: .75rem 0;
+  background-color: #941010;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: .5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6e0c0c;
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+}
