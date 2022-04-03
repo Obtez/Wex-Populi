@@ -12,6 +12,7 @@ import { ItemsComponent } from './features/items/items.component';
 import { ItemFormComponent } from './admin/item-form/item-form.component';
 import { AdminComponent } from './admin/admin.component';
 import {FormsModule} from "@angular/forms";
+import { FighterTypeFormComponent } from './admin/fighter-type-form/fighter-type-form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {FormsModule} from "@angular/forms";
     ItemsComponent,
     ItemFormComponent,
     AdminComponent,
+    FighterTypeFormComponent,
   ],
   imports: [
     BrowserModule,
