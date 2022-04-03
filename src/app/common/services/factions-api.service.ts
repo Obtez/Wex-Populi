@@ -7,7 +7,7 @@ import {map} from "rxjs";
 })
 export class FactionsApiService {
 
-  private baseUrl: string = 'http://localhost:8080/factions'
+  private baseUrl: string = 'http://localhost:8080/factions';
 
   constructor(private http: HttpClient) {
     this.fetchAllFactions();
