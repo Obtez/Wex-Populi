@@ -14,7 +14,7 @@ describe('RecruitmentService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should create an instance of fighterType "grunt"', () => {
+  /*it('should create an instance of fighterType "grunt"', () => {
     const result = service.recruitNewFighter('grunt');
     expect(result.fighterType).toEqual('Grunt');
   })
@@ -27,5 +27,5 @@ describe('RecruitmentService', () => {
   it('should create an instance of fighterType "Commander"', () => {
     const result = service.recruitNewFighter('commander');
     expect(result.fighterType).toEqual('Commander');
-  })
+  })*/
 });
