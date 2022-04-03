@@ -2,7 +2,7 @@
 <h1>Items</h1>
 <div class="items-list">
   <div class="item-container" *ngFor="let item of items">
-    <div class="image-container">
+    <div class="image-container" *ngIf="item.image_url">
       <img [src]="item.image_url" [alt]="item.name">
     </div>
     <div class="item-description-container"><h3>{{item.name | titlecase}}</h3>

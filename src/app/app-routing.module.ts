@@ -5,13 +5,17 @@ import {DashboardComponent} from "./features/dashboard/dashboard.component";
 import {RecruitmentComponent} from "./features/recruitment/recruitment.component";
 import {FactionsComponent} from "./features/factions/factions.component";
 import {ItemsComponent} from "./features/items/items.component";
+import {AdminComponent} from "./admin/admin.component";
 
 const routes: Routes = [
   { path: '', component: StartScreenComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'recruitment', component: RecruitmentComponent },
   { path: 'factions', component: FactionsComponent },
-  { path: 'items', component: ItemsComponent }
+  { path: 'items', component: ItemsComponent },
+
+  // ADMIN ROUTE
+  { path: 'admin', component:  AdminComponent}
 ];
 
 @NgModule({
