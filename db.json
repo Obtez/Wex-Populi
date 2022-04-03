@@ -1,0 +1,21 @@
+{
+  "riot": [
+    {
+      "type": "grunt",
+      "fighters": [
+        {
+          "name": "hi"
+        },
+        {"name":  "bye"}
+      ]
+    },
+    {
+      "type": "specialist",
+      "fighters": []
+    },
+    {
+      "type": "commander",
+      "fighters": []
+    }
+  ]
+}
