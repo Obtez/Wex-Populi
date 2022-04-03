@@ -1,0 +1,12 @@
+form {
+  width: 480px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column nowrap;
+
+  label {
+    font-weight: 700;
+  }
+}

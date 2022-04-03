@@ -1,0 +1,30 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Fighter Type Name</label>
+    <input type="text" id="name" name="name" [(ngModel)]="model.name" required>
+  </div>
+  <div class="form-group">
+    <label for="base_strength">Base Strength</label>
+    <input type="number" id="base_strength" name="base_strength" [(ngModel)]="model.base_strength" required>
+  </div>
+
+  <div class="form-group">
+    <label for="carry_capacity">Carry Capacity</label>
+    <input type="number" id="carry_capacity" name="carry_capacity" [(ngModel)]="model.carry_capacity" required>
+  </div>
+
+  <div class="form-group">
+    <label for="image_url">Image URL</label>
+    <input type="url" id="image_url" name="image_url" [(ngModel)]="model.image_url">
+  </div>
+
+  <button type="submit">Save Fighter Type</button>
+
+</form>
+
+
+
+private String name;
+private int base_strength;
+private int carry_capacity;
+private String image_url;
