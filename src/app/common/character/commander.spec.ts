@@ -14,7 +14,6 @@ describe('Commander', () => {
   it('should add the strength modifier -> total strength between 40 and', () => {
     const newCommander = new Commander();
 
-    console.log("Commander:", newCommander.strength);
     expect(newCommander.strength).toBeGreaterThanOrEqual(40);
     expect(newCommander.strength).toBeLessThanOrEqual(43);
   })
