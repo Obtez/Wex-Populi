@@ -8,6 +8,7 @@ import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { RecruitmentComponent } from './features/recruitment/recruitment.component';
 import {HttpClientModule} from "@angular/common/http";
 import { FactionsComponent } from './features/factions/factions.component';
+import { ItemsComponent } from './features/items/items.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FactionsComponent } from './features/factions/factions.component';
     StartScreenComponent,
     DashboardComponent,
     RecruitmentComponent,
-    FactionsComponent
+    FactionsComponent,
+    ItemsComponent,
   ],
   imports: [
     BrowserModule,
