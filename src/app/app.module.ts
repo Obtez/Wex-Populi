@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { StartScreenComponent } from './features/start-screen/start-screen.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { RecruitmentComponent } from './features/recruitment/recruitment.component';
+import {HttpClientModule} from "@angular/common/http";
+import { FactionsComponent } from './features/factions/factions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartScreenComponent,
     DashboardComponent,
-    RecruitmentComponent
+    RecruitmentComponent,
+    FactionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
