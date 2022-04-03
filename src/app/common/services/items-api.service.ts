@@ -26,7 +26,7 @@ export class ItemsApiService {
       map(result => {
         return result;
       })
-    )
+    );
   }
 
 }
