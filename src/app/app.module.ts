@@ -9,6 +9,9 @@ import { RecruitmentComponent } from './features/recruitment/recruitment.compone
 import {HttpClientModule} from "@angular/common/http";
 import { FactionsComponent } from './features/factions/factions.component';
 import { ItemsComponent } from './features/items/items.component';
+import { ItemFormComponent } from './admin/item-form/item-form.component';
+import { AdminComponent } from './admin/admin.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { ItemsComponent } from './features/items/items.component';
     RecruitmentComponent,
     FactionsComponent,
     ItemsComponent,
+    ItemFormComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
