@@ -1,0 +1,23 @@
+<a routerLink="/">Back to Home</a>
+<h1>Items</h1>
+<div class="items-list">
+  <div class="item-container" *ngFor="let item of items">
+    <div class="image-container">
+      <img [src]="item.image_url" [alt]="item.name">
+    </div>
+    <div class="item-description-container"><h3>{{item.name | titlecase}}</h3>
+      <p class="item-description"><em>{{item.description}}</em></p>
+      <ul>
+        <li>
+          <span class="stat-name">Attack Modifier:</span>
+          <span class="stat-value">{{item.attack_modifier}}</span>
+        </li>
+        <li>
+          <span class="stat-name">Defense Modifier:</span>
+          <span class="stat-value">{{item.defense_modifier}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
